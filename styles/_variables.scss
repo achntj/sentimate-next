@@ -1,0 +1,64 @@
+//
+// VARIABLES
+//
+
+// Colors
+$blue: #007bff;
+$purple: #5e03fc;
+$green: #19e352;
+$royal: #2046ee;
+
+// Grays
+$black: #000;
+$darkerGray: #222;
+$darkGray: #333;
+$gray: #666;
+$lightGray: #eee;
+$white: #fff;
+
+/*********************/
+/* THEMING */
+/*********************/
+
+:root {
+  --color-bg: #fff;
+  --color-text: #333;
+  --color-secondary: black;
+  --color-tertiary: #666;
+  --color-accent: #2196f3;
+  --color-accent-dark: #0284c7;
+  --color-accent-secondary: #5e03fc;
+  --color-selection: #000;
+  --color-highlight: #eee;
+  --color-text-secondary: #222;
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0/0.04))
+    drop-shadow(0 4px 3px rgb(0 0 0/0.1));
+}
+// .theme-dark {
+//   --color-bg: #202124;
+//   --color-text: #bbb;
+//   --color-secondary: #e8e4e0;
+//   --color-tertiary: #828282;
+//   --color-accent: #709680;
+//   --color-accent-secondary: #ca6d56;
+//   --color-selection: #ca6d56;
+//   --color-highlight: #333;
+//   --color-text-secondary: #e8e4e0;
+// }
+
+// Font stacks
+$helvetica: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin small-mobile {
+  @media screen and (max-width: 340px) {
+    @content;
+  }
+}
