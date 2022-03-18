@@ -132,6 +132,7 @@ export default function Team({ authors }) {
       <div className="authors">
         <ul class="author-link">
           {authors.map((author) => (
+            author.slug != "none" && (
             <div class="member" key={author.slug}>
               <img src={author.profilePictureUrl} alt={author.name} />
               <li>
@@ -150,6 +151,7 @@ export default function Team({ authors }) {
                 </p>
               </Link>
             </div>
+            )
           ))}
         </ul>
       </div>
